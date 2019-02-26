@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./js/jquery-cookie.js"></script>
 		<script src="./js/enhancement.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href="./css/enhancement.css" rel="stylesheet" />
 		<link href="./images/favicon.ico" type="image/x-icon" rel="shortcut icon icon" />
-		
+
 		<title>BDO Enchantment Simulator</title>
 
 	</head>
@@ -55,6 +56,7 @@
 					<button id="enchant"></button>
 				</div>
 				<div class="inventory">
+					<div class="btn-reset" id="btn-reset">Remove All Item</div>
 					<h1 style="font-size: 32px">Your Inventory</h1>
 					<div class="inventory_item_grid"></div>
 				</div>
