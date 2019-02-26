@@ -417,7 +417,10 @@ function is_used_cron(){
 }
 
 function renderScreen() {
+	// Save Item and FS
 	Cookies.set('bdo_item', JSON.stringify(current_item), { expires: 1 });
+	Cookies.set('bdo_fs', JSON.stringify(current_fs), { expires: 1 });
+
 	if(selected_item != -1) {
 		if(current_item[selected_item].type == "accessories") {
 			$("#selected_item #box_left").css('background-image', 'url(./images/'+(current_item[selected_item]).image + ')');
@@ -489,9 +492,13 @@ function displayPresetItem() {
 }
 
 $(document).ready(function() {
-	// Load Lastest item from cookie
+	// Load Lastest item and FS from cookie
 	if(Cookies.get('bdo_item') != undefined) {
 		current_item = JSON.parse(Cookies.get('bdo_item'));
+	}
+
+	if(Cookies.get('bdo_fs') != undefined) {
+		current_fs = JSON.parse(Cookies.get('bdo_fs'));
 	}
 	renderScreen();
 
