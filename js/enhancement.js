@@ -21,7 +21,7 @@ var preset_item = [
 {
 	name: "Dandelion Godr Sphera",
 	type: "weapon",
-	image: "Dandelion.png",
+	image: "dandelion.png",
 	level: "+0"
 },
 {
