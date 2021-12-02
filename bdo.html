@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./js/jquery-cookie.js"></script>
+		<script src="./js/enhancement.js"></script>
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href="./css/enhancement.css" rel="stylesheet" />
+		<link href="./images/favicon.ico" type="image/x-icon" rel="shortcut icon icon" />
+
+		<title>BDO Enchantment Simulator</title>
+
+	</head>
+	<body>
+		<audio id="success" style="display:none;">
+		  <source src="./sound/success.m4a" type="audio/mpeg">
+		</audio>
+		<audio id="failed" style="display:none;">
+		  <source src="./sound/failed.m4a" type="audio/mpeg">
+		</audio>
+		<div class="container">
+			<div class="row">
+				<div class="enchant_box" id="enchant_box">			
+					<h1 style="font-size: 32px">BDO Enchantment Simulator</h1>
+
+					<div class="black-spirit" >
+						
+					</div>
+					<div id="char_text" style="color: #9c8f80;">
+						<button class="change_pos" id="previous"><</button> 
+							Character No. : <span id="current_char">1</span> 
+						<button class="change_pos" id="next">></button> 
+					</div>
+
+					<div class="enchant_bar" id="selected_item">
+						<input type="number" id="fs" value="" max="999" min="0"></span>
+
+						<div class="" id="box_left">
+							<span id="box_left_enc_level"></span>
+						</div>
+
+						<div class="" id="box_right">
+							<span id="box_right_enc_level"></span>
+						</div>
+
+
+
+						<label class="cron_tab">
+							<input type="checkbox" id="cron_stone" />
+							<span class="checkmark"></span>
+							<label class="cron_text">Cron Stone</label> 
+						</label>
+					</div>
+
+					<button id="enchant"></button>
+				</div>
+				<div class="inventory">
+					<div class="btn-reset" id="btn-reset">Remove All Item</div>
+					<h1 style="font-size: 32px">Your Inventory</h1>
+					<div class="inventory_item_grid"></div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="add">
+					<h1 style="font-size: 32px">MarketPlace</h1>
+					<div class="add_item_grid"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
